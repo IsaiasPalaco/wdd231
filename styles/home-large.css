@@ -100,7 +100,7 @@
         border-top-right-radius: 10px;
     }
 
-    section h1
+    section h2
     {
         font-family: var(--font-family-primary);
         background-color: var(--tertiary-color);
