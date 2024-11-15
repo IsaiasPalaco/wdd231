@@ -3,9 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>trial</title>
+    <title>Home Page</title>
+    <meta name="description" content="Course Home Page">
+    <meta name="author" content="Isaias Palaço">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+    <script src="scripts/home.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <div class="aboveAll">
+            <img src="images/page-profile.webp" alt="header picture" loading="lazy">
+            <h1>Isaias P. Palaço</h1>
+            <button type="button" id="menu"></button>
+        </div>
+        <nav class="navigation" id="nav-links">
+            <ul >
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">GitHub Profile</a></li>
+                <li><a href="#">LinkDin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="gridContainer">
+            <section>
+                <h1>Course Work</h1>
+                <div class="course-list">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h1>Tete, Mozambique</h1>
+                <img src="images/imbondeiro.webp" alt="imbondeiro" id="imagem-central" loading="lazy">
+                <p>Imbondeiro Trees</p>
+            </section>
+            <section>
+                <h1>Web and Computer Programing Certificate</h1>
+                <div>
+                    <button class="filter-btn" data-filter="all">All Courses</button>
+                    <button class="filter-btn" data-filter="CSE">CSE Courses</button>
+                    <button class="filter-btn" data-filter="WDD">WDD Courses</button>
+                </div>
+                <div class="courses-content" id="courses-content"></div>
+                <div id="total-credits"></div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🚀 Isaías De Walter Paulo Palaço 🚀 Mozambique</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
