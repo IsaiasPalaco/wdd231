@@ -68,7 +68,7 @@ body
     font-size: 1.5rem;
     border: 0;
     background: none;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -93,7 +93,6 @@ nav.navigation {
     display: flex;
     flex-direction: column;
     list-style: none;
-    color: var(--secondary-color);
 }
 
 ul
@@ -108,10 +107,12 @@ ul
 
 nav ul li a 
 {
+    display: none;
     color: var(--primary-color);
     padding: 0.5rem 0;
     text-decoration: none;
     font-size: 0.9rem;
+    font-weight: 900;
     text-align: center;
 }
 
