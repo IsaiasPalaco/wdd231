@@ -1,4 +1,3 @@
-// Update current year and last modified date
 document.getElementById('currentyear').textContent = new Date().getFullYear();
 document.getElementById('lastModified').textContent = `Last modified: ${document.lastModified}`;
 
@@ -24,11 +23,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     const menuIcon = document.getElementById('menu');
     const navLinks = document.getElementById('nav-links');
-    const logo = document.getElementById('logo');
     menuIcon.addEventListener('click', () => {
         navLinks.classList.toggle('show');
         menuIcon.classList.toggle('open');
-        logo.classList.toggle('centered');
     });
 
     gridViewBtn.addEventListener('click', () => renderMembers('grid'));
