@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home chamber website</title>
+    <meta name="author" content="Isaias PAlaco">
+    <meta name="description" content="City chamber site">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Directory - Imbondeiro Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://example.com/images/og-image.jpg">
+    <meta property="og:url" content="https://example.com/directory.html">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-larger.css">
+    <script src="scripts/chamber.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <img src="images/imbondeiro-logo.webp" alt="logotipo" loading="lazy">
+            <div class="cabecalho-letreiro">
+                <h1>Imbondeiro</h1>
+                <p>Chamber of Commerce</p>
+                <button type="button" id="menu"></button>
+            </div>
+            <nav class="navigation" id="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="directory.htm">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="directory-controls">
+            <button id="grid-view" aria-label="Grid View">Grid View</button>
+            <button id="list-view" aria-label="List View">List View</button>
+        </section>
+        <section id="directory" class="grid-view">
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <section>
+                <p><strong>Imbondeiro Chamber of Commerce</strong></p>
+                <p>Bairro 1 de Maio, Moatize</p>
+                <p>Moztize, Carbomoc</p>
+                <p>info@imbondeiro.org</p>
+                <p>(+258) 84 440 0402</p>
+            </section>
+            <section>
+                <nav class="sociallinks">
+                    <a href="https://youtube.com">
+                        <img src="images/youtube-svgrepo-com.svg" alt="Youtube">
+                    </a>
+                    <a href="https://twitter.com">
+                        <img src="images/twitter-svgrepo-com.svg" alt="Twitter">
+                    </a>
+                    <a href="https://linkedin.com">
+                        <img src="images/linkedin-svgrepo-com.svg" alt="Linkedin">
+                    </a>
+                </nav>
+            </section>
+            <section>
+                <p>WDD 231 Class Project</p>
+                <p>Isaías Palaço</p>
+                <p>© <span id="currentyear"></span> Imbondeiro Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>

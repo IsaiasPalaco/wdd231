@@ -1,0 +1,56 @@
+[
+    {
+      "name": "Alpha Corp",
+      "address": "123 Business Rd, Capital City",
+      "phone": "(555) 123-4567",
+      "website": "https://alphacorp.com",
+      "image": "images/page-profile.webp",
+      "membershipLevel": 3,
+      "description": "Leading solutions in tech and innovation."
+    },
+    {
+      "name": "Beta Enterprises",
+      "address": "456 Market St, Business Town",
+      "phone": "(555) 987-6543",
+      "website": "https://betaent.com",
+      "image": "betaent-logo.png",
+      "membershipLevel": 2,
+      "description": "Expertise in financial services and management."
+    },
+    {
+      "name": "Gamma Industries",
+      "address": "789 Factory Ave, Industry City",
+      "phone": "(555) 654-3210",
+      "website": "https://gammaindustries.com",
+      "image": "gamma-logo.png",
+      "membershipLevel": 1,
+      "description": "Manufacturers of premium-grade industrial goods."
+    },
+    {
+      "name": "Delta Design",
+      "address": "101 Art Ln, Design District",
+      "phone": "(555) 111-2222",
+      "website": "https://deltadesign.com",
+      "image": "delta-logo.png",
+      "membershipLevel": 3,
+      "description": "Creative agency specializing in branding."
+    },
+    {
+      "name": "Epsilon Solutions",
+      "address": "202 Tech Blvd, Silicon Valley",
+      "phone": "(555) 333-4444",
+      "website": "https://epsilonsolutions.com",
+      "image": "epsilon-logo.png",
+      "membershipLevel": 2,
+      "description": "Pioneering software development and IT consulting."
+    },
+    {
+      "name": "Zeta Group",
+      "address": "303 Retail Park, Shop City",
+      "phone": "(555) 555-6666",
+      "website": "https://zetagroup.com",
+      "image": "zeta-logo.png",
+      "membershipLevel": 1,
+      "description": "Retail management and supply chain specialists."
+    }
+  ]  
