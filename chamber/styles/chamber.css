@@ -84,7 +84,8 @@ body
     content: "❎";
 }
 
-.show a {
+.show a 
+{
     display: block;
 }
 
@@ -105,9 +106,8 @@ ul
     margin-top: 1rem;
 }
 
-ul li a 
+nav ul li a 
 {
-    display: block;
     color: var(--primary-color);
     padding: 0.5rem 0;
     text-decoration: none;
