@@ -202,8 +202,9 @@ main
 
 .footer-container
 {
-    display: flex;
-    justify-content: space-around;
+    display: block;
+    align-items: center;
+    align-content: center;
     max-width: 100%;
     background-color: var(--quaternary-color);
     color: var(--primary-color);
@@ -224,7 +225,6 @@ main
 .sociallinks 
 {
     display: flex; 
-    justify-content: flex-end; 
 }
 
 .sociallinks a 
