@@ -252,6 +252,7 @@ main
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
+    margin: 0 auto;
 }
 
 .list-view 
@@ -263,6 +264,7 @@ main
 
 .member-card 
 {
+    margin: 0 auto;
     background-color: var(--quaternary-color);
     border: 1px solid var(--tertiary-color);
     color: #fff;
