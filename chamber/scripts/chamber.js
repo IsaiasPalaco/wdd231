@@ -13,9 +13,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         directory.className = view === 'grid' ? 'grid-view' : 'list-view';
         directory.innerHTML = members.map(member => `
             <div class="member-card">
+                <img src="images/${member.image}" alt="${member.name}">
                 <h2>${member.name}</h2>
                 <p>${member.address}</p>
                 <p>${member.phone}</p>
+                <p><a href="${member.website}" target="_blank">${member.website}</a></p>
                 <p>Membership Level: ${member.level}</p>
             </div>
         `).join('');

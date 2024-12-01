@@ -247,8 +247,7 @@ main
     width: 4rem;
 }
 
-
-    .grid-view 
+.grid-view 
 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -271,6 +270,20 @@ main
     margin: 2rem;
     text-align: center;
     border-radius: 0.5rem;
+}
+
+.member-card a 
+{
+    color: #fff;
+    text-decoration: none;
+}
+
+.member-card img 
+{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    border: 5px solid #fff;
 }
 
 .directory-controls

@@ -4,7 +4,7 @@
       "address": "123 Business Rd, Capital City",
       "phone": "(555) 123-4567",
       "website": "https://alphacorp.com",
-      "image": "images/page-profile.webp",
+      "image": "page-profile.webp",
       "membershipLevel": 3,
       "description": "Leading solutions in tech and innovation."
     },
@@ -13,16 +13,16 @@
       "address": "456 Market St, Business Town",
       "phone": "(555) 987-6543",
       "website": "https://betaent.com",
-      "image": "betaent-logo.png",
+      "image": "page-profile.webp",
       "membershipLevel": 2,
       "description": "Expertise in financial services and management."
     },
     {
-      "name": "Gamma Industries",
+      "name": "Gamma",
       "address": "789 Factory Ave, Industry City",
       "phone": "(555) 654-3210",
       "website": "https://gammaindustries.com",
-      "image": "gamma-logo.png",
+      "image": "page-profile.webp",
       "membershipLevel": 1,
       "description": "Manufacturers of premium-grade industrial goods."
     },
@@ -31,7 +31,7 @@
       "address": "101 Art Ln, Design District",
       "phone": "(555) 111-2222",
       "website": "https://deltadesign.com",
-      "image": "delta-logo.png",
+      "image": "page-profile.webp",
       "membershipLevel": 3,
       "description": "Creative agency specializing in branding."
     },
@@ -40,7 +40,7 @@
       "address": "202 Tech Blvd, Silicon Valley",
       "phone": "(555) 333-4444",
       "website": "https://epsilonsolutions.com",
-      "image": "epsilon-logo.png",
+      "image": "page-profile.webp",
       "membershipLevel": 2,
       "description": "Pioneering software development and IT consulting."
     },
@@ -49,7 +49,34 @@
       "address": "303 Retail Park, Shop City",
       "phone": "(555) 555-6666",
       "website": "https://zetagroup.com",
-      "image": "zeta-logo.png",
+      "image": "page-profile.webp",
+      "membershipLevel": 1,
+      "description": "Retail management and supply chain specialists."
+    },
+    {
+      "name": "Palaco Group",
+      "address": "303 Retail Park, Shop City",
+      "phone": "(555) 555-6666",
+      "website": "https://palagroup.com",
+      "image": "page-profile.webp",
+      "membershipLevel": 1,
+      "description": "Retail management and supply chain specialists."
+    },
+    {
+      "name": "Cosmeticos",
+      "address": "303 Retail Park, Shop City",
+      "phone": "(555) 555-6666",
+      "website": "https://cosmeticos.com",
+      "image": "page-profile.webp",
+      "membershipLevel": 1,
+      "description": "Retail management and supply chain specialists."
+    },
+    {
+      "name": "Potech",
+      "address": "303 Retail Park, Shop City",
+      "phone": "(555) 555-6666",
+      "website": "https://potech.com",
+      "image": "page-profile.webp",
       "membershipLevel": 1,
       "description": "Retail management and supply chain specialists."
     }
