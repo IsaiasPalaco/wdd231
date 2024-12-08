@@ -199,12 +199,12 @@ main
     color: #fff;
 }
 
-.titulo p
+.spotlight-container p
 {
     margin: 0;
 }
 
-.titulo h1
+.spotlight-container h1
 {
     padding-top: 0.5rem;
 }
