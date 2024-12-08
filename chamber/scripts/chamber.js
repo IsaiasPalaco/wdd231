@@ -1,10 +1,7 @@
-// Set current year and last modified date
 document.getElementById('currentyear').textContent = new Date().getFullYear();
 document.getElementById('lastModified').textContent = `Last modified: ${document.lastModified}`;
 
-// Main functionality
 document.addEventListener('DOMContentLoaded', async () => {
-    // Constants
     const apiKey = 'df3fd57c026a2469ab01e45aad9a3fdf';
     const city = 'Moatize, MZ';
     const units = 'metric';
@@ -17,7 +14,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     const navLinks = document.getElementById('nav-links');
     const spotlightContainer = document.querySelector('.spotlight-container');
 
-    // Member data (local members for spotlight)
     const members = [
         {
             name: "Alpha Corp",
@@ -37,10 +33,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             membershipLevel: 2,
             description: "Expertise in financial services and management."
         },
-        // Additional members here...
     ];
 
-    // Fetch weather data
     async function fetchWeatherData() {
         try {
             const weatherResponse = await fetch(weatherEndpoint);
@@ -73,7 +67,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     }
 
-    // Render spotlight members
     function renderSpotlight() {
         const spotlightCandidates = members.filter(member => member.membershipLevel >= 2);
         const shuffledCandidates = spotlightCandidates.sort(() => 0.5 - Math.random());
@@ -91,7 +84,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         `).join('');
     }
 
-    // Render directory members
     async function renderMembers(view = 'grid') {
         try {
             const response = await fetch('data/members.json');
@@ -113,7 +105,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     }
 
-    // Menu toggle
     menuIcon.addEventListener('click', () => {
         navLinks.classList.toggle('show');
         menuIcon.classList.toggle('open');
