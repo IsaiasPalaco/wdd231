@@ -137,7 +137,7 @@
         padding: 1rem;
     }
 
-    .grid-container-bottom
+    .spotlight-container
     {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -146,13 +146,18 @@
         padding: 0.5rem;
     }
 
-    .grid-container-bottom section 
+    .spotlight-container section 
     {
         background-color: var(--quaternary-color);
         border-radius: 1rem;
     }
 
-    .titulo
+    .spotlight-container img
+    {
+        max-width: 8rem;
+    }
+
+    .spotlight-container h1
     {
         text-align: center;
         border-bottom: 1px solid #6482AD;

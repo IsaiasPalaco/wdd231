@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home chamber website</title>
+    <title>Inbondeiro chamber website</title>
     <meta name="author" content="Isaias PAlaco">
     <meta name="description" content="City chamber site">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Kanit:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Directory - Imbondeiro Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero-chamber.webp">
+    <meta property="og:url" content="directory.html">
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/chamber-larger.css">
+    <script src="scripts/chamber.js" defer></script>
 </head>
 <body>
     <header>
@@ -20,8 +25,9 @@
             <div class="cabecalho-letreiro">
                 <h1>Imbondeiro</h1>
                 <p>Chamber of Commerce</p>
+                <button type="button" id="menu"></button>
             </div>
-            <nav>
+            <nav class="navigation" id="nav-links">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="directory.html">Directory</a></li>
@@ -41,56 +47,17 @@
             </section>
             <section>
                 <h1>Current Weather</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aspernatur unde autem assumenda ratione quibusdam, totam, accusamus officiis, dolor porro vel harum repellendus voluptatum! Doloremque recusandae maxime at quaerat laboriosam, commodi est labore minus laudantium ratione deleniti omnis excepturi nisi sit ab praesentium a vel. Nemo, cumque harum! Praesentium odio sed perspiciatis soluta obcaecati vero quas tenetur doloremque incidunt? Iusto.</p>
+                <p id="current-weather">Loading current weather...</p>
             </section>
             <section>
                 <h1>Weather Forecast</h1>
+                <div id="weather-forecast">Loading forecast...</div>
             </section>
         </div>
-        <div class="grid-container-bottom">
-            <section>
-                <div class="titulo">
-                    <h1>Business Name</h1>
-                    <p>Business Tag Line</p>
-                </div>
-                <div class="endereco">
-                    <img src="images/page-profile.webp" alt="profile-image" loading="lazy">
-                    <div class="escritas">
-                        <p><strong>EMAIL:</strong> info@gmail.com</p>
-                        <p><strong>PHONE:</strong> 800-333-333</p>
-                        <p><strong>URL:</strong> mybusiness.com</p>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="titulo">
-                    <h1>Business Name</h1>
-                    <p>Business Tag Line</p>
-                </div>
-                <div class="endereco">
-                    <img src="images/page-profile.webp" alt="" loading="lazy">
-                    <div class="escritas">
-                        <p><strong>EMAIL:</strong> info@gmail.com</p>
-                        <p><strong>PHONE:</strong> 800-333-333</p>
-                        <p><strong>URL:</strong> mybusiness.com</p>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="titulo">
-                    <h1>Business Name</h1>
-                    <p>Business Tag Line</p>
-                </div>
-                <div class="endereco">
-                    <img src="images/page-profile.webp" alt="" loading="lazy">
-                    <div class="escritas">
-                        <p><strong>EMAIL:</strong> info@gmail.com</p>
-                        <p><strong>PHONE:</strong> 800-333-333</p>
-                        <p><strong>URL:</strong> mybusiness.com</p>
-                    </div>
-                </div>
-            </section>
-        </div>
+        <section id="spotlight">
+            <h1>Spotlight Members</h1>
+            <div class="spotlight-container"></div>
+        </section>
     </main>
     <footer>
         <div class="footer-container">

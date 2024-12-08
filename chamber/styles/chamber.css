@@ -17,7 +17,7 @@ html
     --primary-color: #023938;
     --secondary-color: #7FA1C3;
     --tertiary-color: #E2DAD6;
-    --quaternary-color: #000B58; /* Nav background */
+    --quaternary-color: #000B58;
     --font-family-primary: 'Roboto', sans-serif;
     --font-family-secondary: 'Kanit' arial;
 }
@@ -139,7 +139,7 @@ main
 
 .grid-container-midle
 {
-    display: grid;
+    display: block;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     gap: 1rem;
@@ -172,17 +172,19 @@ main
 
 .grid-container-bottom
 {
-    display: grid;
+    display: block;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     gap: 1rem;
     padding: 0.5rem;
+
 }
 
 .grid-container-bottom section 
 {
     background-color: var(--quaternary-color);
     border-radius: 1rem;
+    margin-bottom: 1rem;
 }
 
 .titulo
