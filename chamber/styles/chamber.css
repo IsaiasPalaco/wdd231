@@ -170,7 +170,7 @@ main
     padding: 1rem;
 }
 
-.grid-container-bottom
+.spotlight-container
 {
     display: block;
     grid-template-columns: repeat(3, 1fr);
@@ -180,11 +180,16 @@ main
 
 }
 
-.grid-container-bottom section 
+.spotlight-container section 
 {
     background-color: var(--quaternary-color);
     border-radius: 1rem;
     margin-bottom: 1rem;
+}
+
+.spotlight-container img
+{
+    max-width: 8rem;
 }
 
 .titulo
