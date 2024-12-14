@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join to our chamber of commerce</title>
+    <meta name="author" content="Isaias Palaco">
+    <meta name="description" content="City chamber site">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Directory - Imbondeiro Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero-chamber.webp">
+    <meta property="og:url" content="directory.html">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-larger.css">
+    <script src="scripts/chamber.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <img src="images/imbondeiro-logo.webp" alt="logotipo" loading="lazy">
+            <div class="cabecalho-letreiro">
+                <h1>Imbondeiro</h1>
+                <p>Chamber of Commerce</p>
+                <button type="button" id="menu"></button>
+            </div>
+            <nav class="navigation" id="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="form-section">
+            <h1>Join the Chamber</h1>
+            <form method="get" action="thankyou.html">
+                <label>
+                    First Name:
+                    <input type="text" name="first-name" title="First Name" autocomplete="given-name" required>
+                </label>
+                <label>
+                    Last Name:
+                    <input type="text" name="last-name" title="Last Name" autocomplete="family-name" required>
+                </label>
+                <label>
+                    Organizational Title:
+                    <input type="text" name="organization-title" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\-\s]{7,}" required>
+                </label>
+                <label>
+                    Email:
+                    <input type="email" name="email" title="Email" autocomplete="email" placeholder="example@domain.com" required>
+                </label>
+                <label>
+                    Mobile Number:
+                    <input type="tel" name="mobile" title="Mobile Number" autocomplete="tel" required>
+                </label>
+                <label>
+                    Organization Name:
+                    <input type="text" name="organization" title="Organization Name" autocomplete="organization" required>
+                </label>
+                <label>
+                    Membership Level:
+                    <select name="membership-level" title="Membership Level" required>
+                        <option value="np">Non-Profit Membership (Free)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+                <label>
+                    Organization Description:
+                    <textarea name="organization-description" title="Organization Description"></textarea>
+                </label>
+                <input type="hidden" name="timestamp" id="timestamp" value="">
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+
+        <section class="membership-cards">
+            <div class="membership-card" id="np-card">
+                <h2>Non-Profit Membership</h2>
+                <p>Free membership for non-profit organizations.</p>
+                <a href="#np-modal">Learn More</a>
+            </div>
+            <div class="membership-card" id="bronze-card">
+                <h2>Bronze Membership</h2>
+                <p>Basic benefits for small businesses.</p>
+                <a href="#bronze-modal">Learn More</a>
+            </div>
+            <div class="membership-card" id="silver-card">
+                <h2>Silver Membership</h2>
+                <p>Enhanced benefits including event discounts.</p>
+                <a href="#silver-modal">Learn More</a>
+            </div>
+            <div class="membership-card" id="gold-card">
+                <h2>Gold Membership</h2>
+                <p>Premium benefits, advertising, and spotlight.</p>
+                <a href="#gold-modal">Learn More</a>
+            </div>
+        </section>
+
+        <div class="modal" id="np-modal">
+            <div class="modal-content">
+                <h2>Non-Profit Membership</h2>
+                <p>Benefits include free listing in our directory and access to networking events.</p>
+                <button onclick="closeModal('np-modal')">Close</button>
+            </div>
+        </div>
+        <div class="modal" id="bronze-modal">
+            <div class="modal-content">
+                <h2>Bronze Membership</h2>
+                <p>Benefits include basic event access and limited advertising opportunities.</p>
+                <button onclick="closeModal('bronze-modal')">Close</button>
+            </div>
+        </div>
+        <div class="modal" id="silver-modal">
+            <div class="modal-content">
+                <h2>Silver Membership</h2>
+                <p>Enhanced benefits include discounted events and additional advertising slots.</p>
+                <button onclick="closeModal('silver-modal')">Close</button>
+            </div>
+        </div>
+        <div class="modal" id="gold-modal">
+            <div class="modal-content">
+                <h2>Gold Membership</h2>
+                <p>All-inclusive benefits: premium events, full advertising access, and spotlight features.</p>
+                <button onclick="closeModal('gold-modal')">Close</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <section>
+                <p><strong>Imbondeiro Chamber of Commerce</strong></p>
+                <p>Bairro 1 de Maio, Moatize</p>
+                <p>Moztize, Carbomoc</p>
+                <p>info@imbondeiro.org</p>
+                <p>(+258) 84 440 0402</p>
+            </section>
+            <section>
+                <nav class="sociallinks">
+                    <a href="https://youtube.com">
+                        <img src="images/youtube-svgrepo-com.svg" alt="Youtube">
+                    </a>
+                    <a href="https://twitter.com">
+                        <img src="images/twitter-svgrepo-com.svg" alt="Twitter">
+                    </a>
+                    <a href="https://linkedin.com">
+                        <img src="images/linkedin-svgrepo-com.svg" alt="Linkedin">
+                    </a>
+                </nav>
+            </section>
+            <section>
+                <p>WDD 231 Class Project</p>
+                <p>Isaías Palaço</p>
+                <p>© <span id="currentyear"></span> Imbondeiro Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>

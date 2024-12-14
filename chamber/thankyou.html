@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inbondeiro chamber website</title>
+    <title>Thanks for joining Inbondeiro chamber website</title>
     <meta name="author" content="Isaias Palaco">
     <meta name="description" content="City chamber site">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +25,6 @@
             <div class="cabecalho-letreiro">
                 <h1>Imbondeiro</h1>
                 <p>Chamber of Commerce</p>
-                <button type="button" id="menu"></button>
             </div>
             <nav class="navigation" id="nav-links">
                 <ul>
@@ -37,28 +36,26 @@
             </nav>
         </div>
     </header>
+
     <main>
-        <div class="hero">
-            <img src="images/hero-chamber.webp" alt="Hero Image" loading="lazy">
-        </div>
-        <div class="grid-container-midle">
-            <section>
-                <h1>Events</h1>
-            </section>
-            <section>
-                <h1>Current Weather</h1>
-                <p id="current-weather">Loading current weather...</p>
-            </section>
-            <section>
-                <h1>Weather Forecast</h1>
-                <div id="weather-forecast">Loading forecast...</div>
-            </section>
-        </div>
-        <section id="spotlight">
-            <h1>Spotlight Members</h1>
-            <div class="spotlight-container"></div>
+        <section class="thankyou-container">
+            <h1>Thank You for Joining!</h1>
+            <p>We appreciate your interest in becoming a member of the Imbondeiro Chamber of Commerce. Below are the details you provided:</p>
+
+            <div class="form-details">
+                <p><strong>First Name:</strong> <span id="first-name"></span></p>
+                <p><strong>Last Name:</strong> <span id="last-name"></span></p>
+                <p><strong>Email Address:</strong> <span id="email"></span></p>
+                <p><strong>Mobile Phone:</strong> <span id="mobile"></span></p>
+                <p><strong>Business Name:</strong> <span id="business-name"></span></p>
+                <p><strong>Submitted On:</strong> <span id="timestamp"></span></p>
+            </div>
+
+            <p>If any details are incorrect, please <a href="join.html">return to the form</a> and resubmit.</p>
+            <a href="index.html" class="button">Return to Home</a>
         </section>
     </main>
+
     <footer>
         <div class="footer-container">
             <section>
@@ -84,8 +81,7 @@
             <section>
                 <p>WDD 231 Class Project</p>
                 <p>Isaías Palaço</p>
-                <p>© <span id="currentyear"></span> Imbondeiro Chamber of Commerce</p>
-                <p id="lastModified"></p>
+                <p>&copy; <span id="currentyear"></span> Imbondeiro Chamber of Commerce</p>
             </section>
         </div>
     </footer>
